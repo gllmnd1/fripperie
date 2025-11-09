@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import BackButton from '../components/BackButton'
 import ProductCard from '../components/ProductCard'
 
 const sampleItems = [
@@ -16,6 +17,9 @@ export default function Collections(){
     <div>
       <Header />
       <main className="container py-16">
+        <div className="mb-6">
+          <BackButton />
+        </div>
         <h1 className="text-3xl font-bold">Collections</h1>
         <p className="mt-2 text-gray-600">Parcourez notre sélection triée sur le volet.</p>
 

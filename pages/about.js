@@ -1,11 +1,15 @@
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import BackButton from '../components/BackButton'
 
 export default function About(){
   return (
     <div>
       <Header />
       <main className="container py-16">
+        <div className="mb-6">
+          <BackButton />
+        </div>
         <h1 className="text-3xl font-bold">À propos</h1>
         <p className="mt-4 text-gray-600">La Fripperie. Notre démarche : qualité, transparence et style durable.</p>
 
