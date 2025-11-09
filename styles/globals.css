@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Basic aesthetic for fripperie */
+:root{
+  --accent:#B76E79; /* muted rose */
+  --muted:#F7F4F2;
+  --text:#1F2937;
+}
+
+body{background-color:var(--muted); color:var(--text);} 
+
+/* small container */
+.container{max-width:1100px; margin-left:auto; margin-right:auto; padding-left:1rem; padding-right:1rem}
+
+/* utility shadow */
+.card-shadow{box-shadow:0 6px 18px rgba(31,41,55,0.08)}
