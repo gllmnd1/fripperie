@@ -17,29 +17,34 @@ export default function Home(){
       <main>
         <Hero />
 
-        {/* Galerie attractive sur la home */}
+        {/* Vitrine moderne */}
         <section className="container mt-16 mb-12">
-          <div className="flex justify-between items-end mb-8">
+          <div className="flex items-end justify-between mb-8">
             <div>
               <h2 className="text-4xl font-bold tracking-tight">Vitrine</h2>
               <p className="text-gray-500 mt-2 text-sm">Sélectionnée par Mame Diarra</p>
             </div>
+            <a href="/collections" className="text-sm text-[var(--accent)]">Voir tout</a>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {sampleProducts.slice(0,3).map(p => (
-              <div key={p.id} className="group cursor-pointer">
-                <div className="bg-gray-100 rounded-sm overflow-hidden mb-3 aspect-[3/4] relative">
-                  <img 
-                    src={p.image} 
-                    alt={p.title} 
-                    className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" 
+              <div key={p.id} className="group cursor-pointer rounded-lg overflow-hidden">
+                <div className="relative aspect-[3/4] bg-gray-100">
+                  <img
+                    src={p.image}
+                    alt={p.title}
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
-                </div>
-                <div className="px-1">
-                  <div className="font-medium text-sm mb-1">{p.title}</div>
-                  <div className="text-xs text-gray-500 mb-2">{p.brand} · {p.condition}</div>
-                  <div className="text-base font-semibold">{p.price}</div>
+
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+
+                  <div className="absolute left-4 bottom-4 text-white">
+                    <div className="text-sm font-medium">{p.title}</div>
+                    <div className="text-xs opacity-80">{p.brand} · {p.condition}</div>
+                  </div>
+
+                  <div className="absolute right-4 top-4 bg-white/90 text-black text-xs px-3 py-1 rounded">{p.price}</div>
                 </div>
               </div>
             ))}
@@ -52,17 +57,17 @@ export default function Home(){
             <p className="text-gray-500 mt-2 text-sm">Pièces mises en avant cette saison</p>
           </div>
 
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
             {sampleProducts.map(p => (
-              <div key={p.id} className="group cursor-pointer">
-                <div className="bg-gray-100 rounded-sm overflow-hidden mb-3 aspect-[3/4] relative">
-                  <img 
-                    src={p.image} 
-                    alt={p.title} 
-                    className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" 
+              <div key={p.id} className="group cursor-pointer rounded-lg overflow-hidden">
+                <div className="relative aspect-[3/4] bg-gray-100">
+                  <img
+                    src={p.image}
+                    alt={p.title}
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                 </div>
-                <div className="px-1">
+                <div className="px-1 mt-2">
                   <div className="font-medium text-sm mb-1">{p.title}</div>
                   <div className="text-xs text-gray-500 mb-2">{p.brand} · {p.condition}</div>
                   <div className="text-base font-semibold">{p.price}</div>

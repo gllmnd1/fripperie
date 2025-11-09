@@ -1,17 +1,41 @@
 export default function Hero(){
   return (
-    <section className="bg-white">
-      <div className="container py-16 flex flex-col md:flex-row items-center gap-10">
-        <div className="md:w-1/2">
-          <h1 className="text-4xl font-extrabold leading-tight">La Fripperie de Mame Diarra</h1>
-          <p className="mt-4 text-gray-600">Pièces uniques, sélectionnées avec soin. Mode circulaire et esthétisme intemporel.</p>
-          <div className="mt-6 flex gap-4">
-            <a href="/collections" className="inline-block bg-[var(--accent)] text-white py-2 px-5 rounded-md shadow">Voir la collection</a>
-            <a href="/about" className="inline-block border border-gray-200 py-2 px-5 rounded-md">À propos</a>
-          </div>
+    <section className="relative bg-white">
+      {/* Full-bleed hero style Zara */}
+      <div className="relative overflow-hidden" style={{height: '85vh', minHeight: '600px'}}>
+        <div className="absolute inset-0">
+          <img
+            src="https://i.pinimg.com/1200x/b9/05/ea/b905ea51a5307d2439b0ef7bf9e5bc25.jpg"
+            alt="hero"
+            className="w-full h-full object-cover object-center"
+          />
+          <div className="absolute inset-0 bg-black/20" />
         </div>
-        <div className="md:w-1/2 flex justify-center">
-          <img src="https://i.pinimg.com/1200x/74/d0/b6/74d0b669875c67b1d74f7b5bdebe9afa.jpg" alt="vintage" className="w-72 h-72 object-contain" />
+
+        <div className="container relative h-full flex items-end pb-16 md:pb-20">
+          <div className="max-w-lg text-white">
+            <h1 className="text-5xl md:text-7xl font-bold tracking-tighter leading-none mb-4">
+              La Fripperie
+            </h1>
+            <p className="text-base md:text-lg font-light tracking-wide mb-8">
+              Sélection unique de vêtements choisie par Mame Diarra
+            </p>
+
+            <div className="flex flex-wrap gap-3">
+              <a 
+                href="/collections" 
+                className="inline-block bg-white text-black py-3 px-8 text-sm font-medium tracking-wide uppercase hover:bg-gray-100 transition-colors duration-300"
+              >
+                Voir la collection
+              </a>
+              <a 
+                href="/about" 
+                className="inline-block bg-transparent border border-white text-white py-3 px-8 text-sm font-medium tracking-wide uppercase hover:bg-white hover:text-black transition-all duration-300"
+              >
+                À propos
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
