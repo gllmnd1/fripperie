@@ -5,7 +5,7 @@ export default function Hero(){
       <div className="relative overflow-hidden" style={{height: '85vh', minHeight: '600px'}}>
         <div className="absolute inset-0">
           <img
-            src="https://i.pinimg.com/736x/18/9c/1c/189c1c1610c4ac4d79e4652c7429dfe5.jpg"
+            src="https://i.pinimg.com/1200x/f5/7f/37/f57f37b63f70dec32ecdaa0947e2d66e.jpg"
             alt="hero"
             className="w-full h-full object-cover object-center"
           />
