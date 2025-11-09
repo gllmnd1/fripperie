@@ -4,10 +4,10 @@ import Hero from '../components/Hero'
 import ProductCard from '../components/ProductCard'
 
 const sampleProducts = [
-  { id:1, title:'Robe années 70', brand:'Vintage Co.', condition:'Très bon état', price:'75 FCA', image:'https://i.pinimg.com/736x/cc/9a/95/cc9a955446532bdac7d32f812ba52df8.jpg'},
-  { id:2, title:'Manteau en laine', brand:'La Maison', condition:'Bon état', price:'120 FCA', image:'https://i.pinimg.com/1200x/38/cd/56/38cd56611388176bccdcbe486b9e1719.jpg'},
-  { id:3, title:'Chemise brodée', brand:'Atelier', condition:'Très bon état', price:'45 FCA', image:'https://i.pinimg.com/1200x/a0/e9/2f/a0e92f3e9993ced9ba6c142f9682d3fa.jpg'},
-  { id:4, title:'Sac rétro', brand:'Second Life', condition:'Bon état', price:'60 FCA', image:'https://i.pinimg.com/1200x/e6/48/ff/e648ff8e255361c7964f34dbce2a77a4.jpg'},
+  { id:1, title:'Robe années 70', brand:'Vintage Co.', condition:'Très bon état', price:'3000FCA', image:'https://i.pinimg.com/736x/cc/9a/95/cc9a955446532bdac7d32f812ba52df8.jpg'},
+  { id:2, title:'Manteau en laine', brand:'La Maison', condition:'Bon état', price:'3500 FCA', image:'https://i.pinimg.com/1200x/38/cd/56/38cd56611388176bccdcbe486b9e1719.jpg'},
+  { id:3, title:'Chemise brodée', brand:'Atelier', condition:'Très bon état', price:'4000 FCA', image:'https://i.pinimg.com/1200x/a0/e9/2f/a0e92f3e9993ced9ba6c142f9682d3fa.jpg'},
+  { id:4, title:'Sac rétro', brand:'Second Life', condition:'Bon état', price:'3000 FCA', image:'https://i.pinimg.com/1200x/e6/48/ff/e648ff8e255361c7964f34dbce2a77a4.jpg'},
 ]
 
 export default function Home(){
