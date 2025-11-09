@@ -3,8 +3,8 @@ import Footer from '../components/Footer'
 import Hero from '../components/Hero'
 
 const sampleProducts = [
-  { id:1, title:'Robe années 70', brand:'Vintage Co.', description:'Très jolie robe vintage des années 70', price:'3000 FCA', image:'https://i.pinimg.com/736x/cc/9a/95/cc9a955446532bdac7d32f812ba52df8.jpg'},
-  { id:2, title:'Manteau en laine', brand:'La Maison', description:'Chaud et élégant, parfait pour l’hiver', price:'3500 FCA', image:'https://i.pinimg.com/1200x/38/cd/56/38cd56611388176bccdcbe486b9e1719.jpg'},
+  { id:1, title:'Robe années 70', brand:'Vintage Co.', description:'Très jolie robe vintage des années 70', price:'3000 FCA', image:'https://i.pinimg.com/1200x/a2/06/b1/a206b1442a110f06c597b9101ff5cb57.jpg'},
+  { id:2, title:'Manteau en laine', brand:'La Maison', description:'Chaud et élégant, parfait pour l’hiver', price:'3500 FCA', image:'https://i.pinimg.com/1200x/9e/29/5d/9e295db97e5f8d95ec88138581db839d.jpg'},
   { id:3, title:'Chemise brodée', brand:'Atelier', description:'Broderies délicates, style unique', price:'4000 FCA', image:'https://i.pinimg.com/1200x/a0/e9/2f/a0e92f3e9993ced9ba6c142f9682d3fa.jpg'},
   { id:4, title:'Sac rétro', brand:'Second Life', description:'Sac rétro pratique et tendance', price:'3000 FCA', image:'https://i.pinimg.com/1200x/e6/48/ff/e648ff8e255361c7964f34dbce2a77a4.jpg'},
 ]
